@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1 {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     h1 {
 	 font-family: 'Lato', sans-serif;
 	 font-weight: 300;
 	 display: inline-block;
 	 font-weight: 100;
 	 font-size: 2.8125em;
+   padding :50px;
 	 border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	 margin: 0 0 0.1em 0;
-	 padding: 0 0 0.4em 0;
+	 /* padding: 0 0 0.4em 0; */
 }
-                    .main-nav ul
+    .main-nav ul
 {
   display: grid;
   grid-gap: 2em;
@@ -43,68 +44,187 @@
   /*     border: 1px solid white; */
   border-radius: 20px;
 }
-.about
-  {
-    display: grid;
-    grid-template-columns: 1fr;
-  }  
-  .about > .box1
-  {
-    background: rgb(233, 233, 233);
-    padding: 1em;
-    border-radius: 3em;
+    body {
+  margin: 0;
+  color: #222222;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*---------- heading ----------- */
+.masthead {
+    padding: 15em 0;
+    background-image: url("https://techcrunch.com/wp-content/uploads/2014/11/shutterstock_138061871.jpg?w=1390&crop=1");
+    opacity: 6.8;
+  border-radius: 2em;
+  filter: grayscale(30%);
+  background-size: cover;
+  background-position: center;
+  padding: 6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.masthead-heading {
+  font-size: 6em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-shadow: 1.5px 3px 0px #ffffff;
+  color: #c6cecf;
+  margin-top: -0.2em;
+
+}
+.masthead-intro {
+  font-size: 2em;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  text-align: center;
+  color: #4ca6b6;
+  margin-bottom: 0.1em;
+}
+
+/*---------- section ----------- */
+.intro,
+.where-Im-from,
+.more-about-me {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.intro > p,
+.where-Im-from > p,
+.more-about-me > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+section > h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.more-about-me > h2 {
+  font-size: 1.2em;
+  font-family: "Gentium Book Basic";
+  font-weight: bold;
+  color: #48a9b3;
+}
+
+/*---------- footer ----------- */
+.content-footer {
+  margin-top: 8em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: #4ab2bc;
+}
+
+.content-footer > p {
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-family: "Open Sans"
+}
+
+footer > ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+footer ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+.content-footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #000;
+}
+
+@media only screen and (max-width:500px){
+  .masthead {
+    padding: 3em 0;
   }
-  .about > .box1
-{
-  background: rgb(233, 233, 233);
-  padding: 1em;
-  border-radius: 3em;
+  .masthead-heading {
+    font-size: 3em;
+  }
+  .intro,
+  .where-Im-from,
+  .more-about-me,
+  .content-footer {
+    font-size: 0.5em;
+  }
 }
-.about > .box2
-{
-  background: rgb(233, 233, 233);
-  padding: 1em;
-  border-radius: 3em;
-}
-.about > .box3
-{
-  background: rgb(233, 233, 233);
-  padding: 1em;
-  border-radius: 3em;
-}
-    </style>
+  </style>
 </head>
 <body>
-    <center>
-        <h1>VI_BRANT'S RESTURANT</h1>
-    </center>
+  <center>
+    <h1>THE PEARL RESTURANT</h1>
+</center>
+  <nav class="main-nav">
+    <ul>
+      <li>
+        <a href="home.html"> HOME </a>
+      </li>
+      <li>
+        <a href="about.html"> ABOUT US </a>
+      </li>
+      <li>
+        <a href="contact.html"> CONTACT US </a>
+      </li>
+      <li>
+        <a href="#"> PLACE ORDER </a>
+      </li>
+    </ul>
+  </nav>
+
+  <header class="masthead">
+    <p class="masthead-intro">Hi There!!!</p>
+    <h1 class="masthead-heading">THE PEARL!</h1>
+  </header>
+  
+  <section class="intro">
+    <h1>Introduction</h1>
+      <p>
+        "Indulge in a culinary journey like no other at Pearl Restaurant. Our exquisite menu, elegant ambiance, and impeccable service create a dining experience that truly shines. Discover perfection at Pearl."</p>
+      
+  </section>
+  
+  <section class="more-about-me">
+    <h1>About Us</h1>
+    <h2>OUR LOCATION</h2>
+      <p>
+        "Visit us at Pearl Restaurant, conveniently located at [Your Address]. Our prime location ensures easy access and a wonderful dining atmosphere. Experience culinary excellence with us."<p>
+    <h2>WORKING HOURS</h2>
+      <p>
+        "Join us at Pearl Restaurant for a delightful dining experience. We're open from [Opening Time] to [Closing Time] [days of the week]. Whether it's a lunch meeting or a romantic dinner, we're here to serve you."</p>
     
-    <nav class="main-nav">
-        <ul>
-          <li>
-            <a href="home.html"> HOME </a>
-          </li>
-          <li>
-            <a href="#"> ABOUT US </a>
-          </li>
-          <li>
-            <a href="contact.html"> CONTACT US </a>
-          </li>
-          <li>
-            <a href="#"> PLACE ORDER </a>
-          </li>
-        </ul>
-      </nav>
-   <div class="about">
-        <div class="box1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, corrupti.</p>
-        </di>
-        <div class="box1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, corrupti.</p>
-        </di>
-        <div class="box1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, corrupti.</p>
-        </di>
-   </di>
+  </section>
+  <footer class="content-footer">
+    <p>earn more about us on these social grounds:</p>
+    <ul class="social">
+      <li><a href="https://twitter.com/">Twitter</a></li>
+      <li><a href="https://www.facebook.com/">Facebook</a></li>
+    </ul>
+    <p>Cover Image via <a href="http://www.unsplash.com">Unsplash</a></p>
+  </footer>
 </body>
 </html>
